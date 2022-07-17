@@ -1,7 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;500&display=swap');
 .container{
     max-width: 1400px;
     max-height: 1000px;
     border: 1px solid black;
     margin: 0 auto;
+}
+.font-face{
+    font-family: 'Cormorant SC', serif;
+    src: url("fonts/CormorantSC-Regular.ttf");
+}
+
+.h1{
+    font-family: 'Cormorant SC', serif;
+}
+.header__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30%;
+    
+}
+.header-menu{
+    margin-left: 0px;
+    align-items: center;
 }
