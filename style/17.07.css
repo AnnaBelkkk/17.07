@@ -57,3 +57,88 @@
     justify-content: space-between;
     align-items: center;
 }
+.container2{
+    width:950px;
+    height: 600px;
+    overflow: hidden;
+    border: 10px solid peachpuff;
+    border-radius: 10px;
+    margin:auto;
+    margin-top: 150px;
+}
+.slider{
+    margin:auto;
+    margin-top: 150px;
+    max-width: inherit;
+}
+.navig-text{
+    margin-top: 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    width: 900px;
+    height: 50px;
+    justify-content: space-between;
+}
+.text{
+    font-size: 20px;
+}
+.t{
+    transition: all ease .5s;
+}
+.navig{
+    transform: translateX(-50%);
+    display: flex;
+}
+.img,.img1{
+    width: 100%;
+    height: 105%;
+}
+.img1{
+    background-color: peachpuff;
+
+}
+.ar{
+    height: 30px;
+    width: 30px;
+    margin: 8px;
+    cursor:grab;
+    background-color:blanchedalmond;
+    opacity: .8;
+    border-radius:50px;
+    transition: all ease 2s;
+}
+.slid{
+    transition: all ease .5s;
+}
+.ar:active{
+    border: 3px solid peru;
+    background-color: palevioletred;
+    transition: all .1s;
+    cursor:grab;
+}
+.ar:hover{
+    opacity:1;
+    transform: scale(1.1);
+}
+input[name="knop"]{
+    position:absolute;
+    visibility:hidden;
+}
+.sliders{
+    width: 495%;
+    height: 100%;
+    display: flex;
+}
+#knop1:checked ~ .s1 {
+    margin-left: 0;
+}
+#knop2:checked ~ .s1 {
+    margin-left: -25%;
+}
+#knop3:checked ~ .s1 {
+    margin-left: -50%;
+}
+#knop4:checked ~ .s1 {
+    margin-left:-75%;
+}
